@@ -10,6 +10,7 @@ jobs: # A group of steps/jobs
   build:
     runs-on: ubuntu-latest # The type of machine to run the job on
     steps:
-    - uses: [actions/checkout](https://github.com/actions/checkout)@v4 # Action to check out your repository
-    - name: one line script
-      run: echo  hello
+      - uses: actions/checkout@v4 # Correct syntax
+
+      - name: one line script
+        run: echo hello
